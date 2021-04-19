@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/global.css';
 import './styles/pages/landing.css';
 import logoinicio from './img/logo-inicio.jpeg';
-import nuveminicio from './img/nuvem2.jpeg';
+
 
 
 function App() {
