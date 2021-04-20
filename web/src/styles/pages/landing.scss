@@ -1,4 +1,4 @@
-
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 #page-landing{
     width:100vw;
@@ -20,5 +20,43 @@
         font-family: roboto;
         margin-top: 20px;
         margin-left:70px;
+    }
+
+    .btn-login, .btn-register{
+        background-color: #FFAC3A;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 50px;
+        text-decoration: none;
+        border: none;
+    }
+    .btn-login:hover,
+    .btn-register:hover{
+        border: 2px solid #2D0763;
+        background-color: #fff;
+        opacity: 0.65;
+        color: #2D0763;
+        transition: 0.4s;
+
+    }
+    .img-canto{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .img-nuvem-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 6;
+        width:450px
+    }
+    .imagem-inicio{
+        position: absolute;
+        z-index: 10;
+        right:-2px;
     }
 }

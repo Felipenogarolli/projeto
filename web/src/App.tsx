@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles/global.css';
 import './styles/pages/landing.css';
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import logoinicio from './img/logo-inicio.jpeg';
-import nuvem1 from './img/nuvem1.jpeg';
-import imagemInicio from './img/mapa-inicio.jpeg';
-
+import nuvem1 from './img/nuvem1.png';
+import imagemInicio from './img/mapa.png';
+import nuvem2 from './img/nuvem2.png';
 
 function App() {
   return (
@@ -21,18 +21,19 @@ function App() {
               </main>
               <Row>
                 <Col lg={6}>
-                  <a className="btn-login" href="#">Entrar</a>
+                  <Button className="btn-login" href="#">Entrar</Button>
                 </Col>
                 <Col lg={6}>
-                  <a className="btn-register" href="#">Cadastre-se</a>
+                  <Button className="btn-register" href="#">Cadastre-se</Button>
                 </Col>
               </Row>
-              <img className="img-canto" src={nuvem1} />
             </Col>
             <Col lg={7}>
-              <img className="imagem-inicio" src={imagemInicio} />
+              <img alt="img-inicio" className="imagem-inicio img-fluid" src={imagemInicio} />
             </Col>
           </Row>
+          <img alt="img-nuvem2" className="img-nuvem-right img-fluid" src={nuvem2} />
+          <img alt="img-canto" className="img-canto img-fluid" src={nuvem1} />
         </Container>
       </div>
     </div>
