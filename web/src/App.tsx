@@ -6,6 +6,9 @@ import logoinicio from './img/logo-inicio.jpeg';
 import nuvem1 from './img/nuvem1.png';
 import imagemInicio from './img/mapa.png';
 import nuvem2 from './img/nuvem2.png';
+import iconFacebook from './img/icon-facebook.png';
+import iconInstagram from './img/icon-instagram.png';
+import iconLinkedin from './img/icon-linkedin.png';
 
 function App() {
   return (
@@ -30,6 +33,11 @@ function App() {
             </Col>
             <Col lg={7}>
               <img alt="img-inicio" className="imagem-inicio img-fluid" src={imagemInicio} />
+              <div className="redes">
+                <img className="icon" src={iconLinkedin} />
+                <img className="icon" src={iconFacebook} />
+                <img className="icon" src={iconInstagram} />
+              </div>
             </Col>
           </Row>
           <img alt="img-nuvem2" className="img-nuvem-right img-fluid" src={nuvem2} />

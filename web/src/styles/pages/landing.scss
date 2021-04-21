@@ -1,25 +1,24 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 #page-landing{
     width:100vw;
     height:100vh;
     background: #F7F7F7;
-
-    
 }
 
 .sec01{
-    
     .logoinicio{
     margin-top: 65px;
     margin-left: 50px;
     }
     .text01{
-        font-size:40px;
-        font-weight:bold;
-        font-family: roboto;
+        font-size:35px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
         margin-top: 20px;
         margin-left:70px;
+        line-height: 40px;
     }
 
     .btn-login, .btn-register{
@@ -32,6 +31,8 @@
         height: 50px;
         text-decoration: none;
         border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
     }
     .btn-login:hover,
     .btn-register:hover{
