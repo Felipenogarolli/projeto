@@ -10838,34 +10838,38 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#page-landing {
-  width: 100vw;
-  height: 100vh;
-  background: #F7F7F7;
+#page-login {
+  background-color: #2D0763;
 }
 
-.sec01 .text01 {
-  font-size: 35px;
-  font-weight: 400;
+#page-login .sec01 .box {
+  background-color: #fff;
+}
+
+#page-login .sec01 .box .titulo {
+  color: #000;
+  font-size: 45px;
+  line-height: 51px;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 1.5em;
 }
 
-.sec01 .text01 .text-bd {
-  font-weight: 800;
-  text-transform: uppercase;
+#page-login .sec01 .box .form {
+  border: 1px solid #8492A6;
+  border-radius: 10px;
+  width: 273px;
+  height: 50px;
+  font-size: 16px;
+  color: #8190A5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
-.sec01 .btn-login, .sec01 .btn-register {
+#page-login .sec01 .box .form:hover {
+  border-color: #FFAC3A;
+}
+
+#page-login .sec01 .box .btn-entrar {
   background-color: #FFAC3A;
   color: #fff;
   display: -webkit-box;
@@ -10885,71 +10889,20 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
 }
 
-.sec01 .btn-primary:focus,
-.sec01 .btn-primary.focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.sec01 .btn-login:hover,
-.sec01 .btn-register:hover {
+#page-login .sec01 .box .btn-entrar:hover {
   border: 2px solid #2D0763;
   background-color: #fff;
   opacity: 0.65;
   color: #2D0763;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-weight: 800;
 }
 
-.sec01 .img-canto {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 22%;
+#page-login .sec01 .box .text {
+  color: #8190A5;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
 }
-
-.sec01 .img-nuvem-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 6;
-  width: 400px;
-}
-
-.sec01 .imagem-inicio {
-  position: absolute;
-  z-index: 10;
-  right: -2px;
-  width: 80%;
-}
-
-.sec01 .icon:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-@media (max-width: 992px) {
-  .sec01 .logoinicio {
-    width: 80%;
-    margin-left: 10px;
-  }
-  .sec01 .text01 {
-    font-size: 25px;
-    margin-left: 20px;
-  }
-  .sec01 .btn-login, .sec01 .btn-register {
-    width: 140px;
-    margin-left: 25px;
-  }
-  .sec01 .imagem-inicio {
-    position: relative;
-    margin-left: 60px;
-  }
-  .sec01 .img-canto {
-    width: 55%;
-  }
-}
-/*# sourceMappingURL=landing.css.map */
+/*# sourceMappingURL=login.css.map */
