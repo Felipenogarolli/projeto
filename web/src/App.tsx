@@ -15,7 +15,7 @@ function App() {
     <div id="page-landing">
       <div className="sec01">
         <Container>
-          <Row>
+          <Row className="mb-5 pb-5">
             <Col lg={5} className="mt-4">
               <img className="logoinicio" src={logoinicio} alt="logo" />
 
@@ -33,10 +33,15 @@ function App() {
             </Col>
             <Col lg={7}>
               <img alt="img-inicio" className="imagem-inicio img-fluid" src={imagemInicio} />
-              <div className="redes">
-                <img className="icon" src={iconLinkedin} />
-                <img className="icon" src={iconFacebook} />
-                <img className="icon" src={iconInstagram} />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={5}></Col>
+            <Col lg={7} className="mt-lg-5">
+              <div className="redes d-flex justify-content-end align-items-center px-5">
+                <img className="icon mr-4" src={iconLinkedin} />
+                <img className="icon mr-4" src={iconFacebook} />
+                <img className="icon mr-4" src={iconInstagram} />
               </div>
             </Col>
           </Row>

@@ -1,20 +1,18 @@
 import React from 'react';
 import './styles/global.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import imagemLogin from './img/carro-login.jpeg';
-import logo from './img/logo2.jpeg';
 
 function App() {
     return (
-        <div id="page-login">
+        <div id="page-register">
             <div className="sec01">
                 <Container>
                     <Row>
                         <Col lg={5} className="mt-4">
-                            <img className="img-login" src={imagemLogin} alt="logo" />
+                            
                         </Col>
                         <Col lg={7} className="box">
-                            <img className="logo img-fluid" src={logo} />
+                            
                             <h4 className="titulo">Login</h4>
                             <form>
                                 <input className="form" type="text" name="E-mail" />
@@ -33,4 +31,3 @@ function App() {
 
     );
 }
-
