@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/global.css';
+import '../styles/global.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import imagemLogin from './img/logo2.jpeg';
+import imagemLogin from '../img/logo2.jpeg';
 
-function App() {
+function register() {
     return (
         <div id="page-register">
             <div className="sec01">
@@ -30,3 +30,5 @@ function App() {
 
     );
 }
+
+export default register;
