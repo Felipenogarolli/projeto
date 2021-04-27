@@ -1,0 +1,41 @@
+#page-register .sec01 {
+  background-color: #2D0763;
+}
+
+#page-register .sec01 .titulo {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#page-register .sec01 .form {
+  border: 1px solid #2D0763;
+  border-radius: 5px;
+  color: #343F4B;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#page-register .sec01 .btn-criar {
+  width: 288px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #FFAC3A;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=register.css.map */

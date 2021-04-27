@@ -1,10 +1,11 @@
 import React from 'react';
-import './styles/global.css';
+import '../styles/global.css';
+import '../styles/login.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import imagemLogin from './img/carro-login.jpeg';
-import logo from './img/logo2.jpeg';
+import imagemLogin from '../img/carro-login.jpeg';
+import logo from '../img/logo2.jpeg';
 
-function App() {
+function login() {
     return (
         <div id="page-login">
             <div className="sec01">
@@ -33,4 +34,6 @@ function App() {
 
     );
 }
+
+export default login;
 
