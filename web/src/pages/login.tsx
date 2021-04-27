@@ -2,30 +2,30 @@ import React from 'react';
 import '../styles/global.css';
 import '../styles/login.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import imagemLogin from '../img/carro-login.jpeg';
-import logo from '../img/logo2.jpeg';
+import imagemLogin from '../img/carro.png';
+import logo from '../img/logo-inicio.jpeg';
 
 function login() {
     return (
         <div id="page-login">
-            <div className="sec01">
+            <div className="sec01 py-5">
                 <Container>
-                    <Row>
+                    <Row className="d-flex justify-content-center">
                         <Col lg={5} className="mt-4">
                             <img className="img-login" src={imagemLogin} alt="logo" />
                         </Col>
-                        <Col lg={7} className="box">
-                            <img className="logo img-fluid" src={logo} />
-                            <h4 className="titulo">Login</h4>
-                            <form>
-                                <input className="form" type="text" name="E-mail" />
+                        <Col lg={7} className="box mt-5">
+                            <img className="logo img-fluid pt-5" src={logo} />
+                            <h4 className="titulo py-3">Login</h4>
+                            <form className="d-flex flex-column align-items-center">
+                                <input className="form my-3" type="text" name="E-mail" />
                                 <input className="form" type="text" name="Senha" />
                             </form>
-                            <div className="d-flex justify-content-center align-items-center">
+                            <div className="d-flex justify-content-center align-items-center pt-4">
                                 <a className="btn-entrar">Entrar</a>
                             </div>
-                            <a className="text" href="">Crie sua conta. Clique aqui</a>
-                            <a className="text" href="">Esqueceu sua senha? Clique aqui</a>
+                            <a className="text pt-3" href="">Crie sua conta. Clique aqui</a>
+                            <a className="text pb-5" href="">Esqueceu sua senha? Clique aqui</a>
                         </Col>
                     </Row>
                 </Container>

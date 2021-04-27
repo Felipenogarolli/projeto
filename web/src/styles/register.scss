@@ -16,19 +16,49 @@
             padding-left: 10px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
+            height: 50px;
+            width: 330px;
         }
         .btn-criar{
-            width: 288px;
-            height: 70px;
+            width: 330px;
+            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #fff;
             font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
+            font-weight: 800;
             background-color: #FFAC3A;
             border-radius: 5px;
             text-decoration: none;
+            font-size: 20px;
+
+            &:hover{
+                border: 2px solid #2D0763;
+                background-color: #fff;
+                opacity: 0.65;
+                color: #2D0763;
+                transition: 0.4s;
+                font-weight: 800;
+            }
+        }
+        @media (max-width: 992px){
+            .logo{
+                width: 70%;
+            }
+            .titulo{
+                font-size: 25px;
+            }
+            .form{
+                width: 100%;
+                height: 40px;
+                font-size: 15px;
+            }
+            .btn-criar{
+                width: 225px;
+                height: 45px;
+                font-size: 18px;
+            }
         }
     }
 }

@@ -1,12 +1,27 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 #page-login {
     background-color: #2D0763;
 
     .sec01 {
+        .img-login{
+            width: 125%;
+            position: absolute;
+            left: 0;
+            z-index: 10;
+            bottom: -40px;
+        }
+        .logo{
+            width: 50%;
+        }
         .box {
-            background-color: #fff;
+            background-color: #f7f7f7;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
             .titulo {
                 color: #000;
@@ -14,6 +29,7 @@
                 line-height: 51px;
                 font-weight: bold;
                 font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
             }
 
             .form {
@@ -29,6 +45,9 @@
                 &:hover {
                     border-color: #FFAC3A;
                 }
+                &:focus{
+                    box-shadow: none;
+                }
             }
 
             .btn-entrar {
@@ -37,7 +56,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 192px;
+                width: 273px;
                 height: 50px;
                 text-decoration: none;
                 border: none;
@@ -46,10 +65,11 @@
 
                 &:hover {
                     border: 2px solid #2D0763;
-                    background-color: #fff;
+                    background-color: #2D0763;
                     opacity: 0.65;
-                    color: #2D0763;
+                    color: #fff;
                     transition: 0.4s;
+                    font-weight: 800;
                 }
             }
             .text{
