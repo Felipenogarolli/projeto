@@ -23,10 +23,10 @@ function App() {
                 <p>Ajude você também a tornar a sua cidade um local mais seguro</p>
               </main>
               <Row>
-                <Col lg={6}>
+                <Col xs={6}>
                   <Button className="btn-login mt-3" href="login">Entrar</Button>
                 </Col>
-                <Col lg={6}>
+                <Col xs={6}>
                   <Button className="btn-register mt-3" href="#">Cadastre-se</Button>
                 </Col>
               </Row>
@@ -45,7 +45,7 @@ function App() {
               </div>
             </Col>
           </Row>
-          <img alt="img-nuvem2" className="img-nuvem-right img-fluid" src={nuvem2} />
+          <img alt="img-nuvem2" className="img-nuvem-right img-fluid d-none d-md-block" src={nuvem2} />
           <img alt="img-canto" className="img-canto img-fluid" src={nuvem1} />
         </Container>
       </div>
