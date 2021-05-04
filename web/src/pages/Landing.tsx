@@ -20,14 +20,14 @@ function App() {
               <img className="logoinicio" src={logoinicio} alt="logo" />
 
               <main className="text01 mt-5">
-                <p>Adicionar um resump sobre o que é a safe city</p>
+                <p>Ajude você também a tornar a sua cidade um local mais seguro</p>
               </main>
               <Row>
                 <Col lg={6}>
-                  <Button className="btn-login" href="login">Entrar</Button>
+                  <Button className="btn-login mt-3" href="login">Entrar</Button>
                 </Col>
                 <Col lg={6}>
-                  <Button className="btn-register" href="#">Cadastre-se</Button>
+                  <Button className="btn-register mt-3" href="#">Cadastre-se</Button>
                 </Col>
               </Row>
             </Col>
