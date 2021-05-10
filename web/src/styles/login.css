@@ -10855,7 +10855,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #page-login .sec01 .box {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10873,7 +10873,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #page-login .sec01 .box .titulo {
-  color: #000;
+  color: #000000;
   font-size: 45px;
   line-height: 51px;
   font-weight: bold;
@@ -10887,7 +10887,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 273px;
   height: 50px;
   font-size: 16px;
-  color: #8190A5;
+  color: #8492A6;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -10903,7 +10903,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #page-login .sec01 .box .btn-entrar {
   background-color: #FFAC3A;
-  color: #fff;
+  color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10925,14 +10925,14 @@ a.text-dark:hover, a.text-dark:focus {
   border: 2px solid #2D0763;
   background-color: #2D0763;
   opacity: 0.65;
-  color: #fff;
+  color: #FFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-weight: 800;
 }
 
 #page-login .sec01 .box .text {
-  color: #8190A5;
+  color: #8492A6;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;

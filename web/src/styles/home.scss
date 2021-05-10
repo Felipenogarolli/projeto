@@ -1,0 +1,15 @@
+@import 'global';
+
+
+#page-home{
+    .rodape{
+        background-color: $color-1st;
+
+        .text{
+            color: $color-3rd;
+            font-size: 14px;
+            line-height: 35px;
+
+        }
+    }
+}

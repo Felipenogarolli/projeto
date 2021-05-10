@@ -1,8 +1,7 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'global';
 
 #page-login {
-    background-color: #2D0763;
+    background-color: $color-1st;
 
     .sec01 {
         .img-login{
@@ -16,7 +15,7 @@
             width: 50%;
         }
         .box {
-            background-color: #f7f7f7;
+            background-color: $color-5th;
             height: auto;
             display: flex;
             justify-content: center;
@@ -24,7 +23,7 @@
             flex-direction: column;
 
             .titulo {
-                color: #000;
+                color: $color-4th;
                 font-size: 45px;
                 line-height: 51px;
                 font-weight: bold;
@@ -33,17 +32,17 @@
             }
 
             .form {
-                border: 1px solid #8492A6;
+                border: 1px solid $color-6th;
                 border-radius: 10px;
                 width: 273px;
                 height: 50px;
                 font-size: 16px;
-                color: #8190A5;
+                color: $color-6th;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
 
                 &:hover {
-                    border-color: #FFAC3A;
+                    border-color: $color-2nd;
                 }
                 &:focus{
                     box-shadow: none;
@@ -51,8 +50,8 @@
             }
 
             .btn-entrar {
-                background-color: #FFAC3A;
-                color: #fff;
+                background-color: $color-2nd;
+                color: $color-3rd;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -64,16 +63,16 @@
                 font-weight: 400;
 
                 &:hover {
-                    border: 2px solid #2D0763;
-                    background-color: #2D0763;
+                    border: 2px solid $color-1st;
+                    background-color: $color-1st;
                     opacity: 0.65;
-                    color: #fff;
+                    color: $color-3rd;
                     transition: 0.4s;
                     font-weight: 800;
                 }
             }
             .text{
-                color: #8190A5;
+                color: $color-6th;
                 font-size: 14px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
