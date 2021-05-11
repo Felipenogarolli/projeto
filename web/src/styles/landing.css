@@ -10847,7 +10847,7 @@ a.text-dark:hover, a.text-dark:focus {
 .sec01 .text01 {
   font-size: 35px;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10867,7 +10867,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sec01 .btn-login, .sec01 .btn-register {
   background-color: #FFAC3A;
-  color: #fff;
+  color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10877,22 +10877,15 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 192px;
-  height: 50px;
   text-decoration: none;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  width: 192px;
+  height: 50px;
 }
 
-.sec01 .btn-primary:focus,
-.sec01 .btn-primary.focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.sec01 .btn-login:hover,
-.sec01 .btn-register:hover {
+.sec01 .btn-login:hover, .sec01 .btn-register:hover {
   border: 2px solid #2D0763;
   background-color: #FFF;
   opacity: 0.65;
@@ -10900,6 +10893,11 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-weight: 800;
+}
+
+.sec01 .btn-primary:focus .btn-primary.focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .sec01 .img-canto {

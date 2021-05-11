@@ -10846,7 +10846,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #FFF;
   font-size: 45px;
   font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #page-register .sec01 .form {
@@ -10855,7 +10855,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #343F4B;
   font-size: 18px;
   padding-left: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   height: 50px;
   width: 330px;
@@ -10874,7 +10874,7 @@ a.text-dark:hover, a.text-dark:focus {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   background-color: #FFAC3A;
   border-radius: 5px;

@@ -27,7 +27,7 @@
                 font-size: 45px;
                 line-height: 51px;
                 font-weight: bold;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-1st;
                 text-transform: uppercase;
             }
 
@@ -38,7 +38,7 @@
                 height: 50px;
                 font-size: 16px;
                 color: $color-6th;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-1st;
                 font-weight: 400;
 
                 &:hover {
@@ -50,17 +50,10 @@
             }
 
             .btn-entrar {
-                background-color: $color-2nd;
-                color: $color-3rd;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include button;
                 width: 273px;
                 height: 50px;
-                text-decoration: none;
-                border: none;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
+
 
                 &:hover {
                     border: 2px solid $color-1st;
@@ -74,7 +67,7 @@
             .text{
                 color: $color-6th;
                 font-size: 14px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-1st;
                 font-weight: 400;
                 text-decoration: none;
             }

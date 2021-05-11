@@ -9,3 +9,16 @@ $color-5th: #F7F7F7;
 $color-6th: #8492A6;
 $color-7th: #343F4B;
 
+$font-1st: 'Montserrat', sans-serif;
+
+@mixin button{
+    background-color: $color-2nd;
+    color: $color-3rd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    font-family: $font-1st;
+    font-weight: 400;
+}

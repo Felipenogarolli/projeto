@@ -10877,7 +10877,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 45px;
   line-height: 51px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
@@ -10888,7 +10888,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 50px;
   font-size: 16px;
   color: #8492A6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -10913,12 +10913,12 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 273px;
-  height: 50px;
   text-decoration: none;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  width: 273px;
+  height: 50px;
 }
 
 #page-login .sec01 .box .btn-entrar:hover {
@@ -10934,7 +10934,7 @@ a.text-dark:hover, a.text-dark:focus {
 #page-login .sec01 .box .text {
   color: #8492A6;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
