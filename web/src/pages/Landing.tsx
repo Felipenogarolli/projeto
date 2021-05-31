@@ -27,7 +27,7 @@ function App() {
                   <Button className="btn-login mt-3" href="login">Entrar</Button>
                 </Col>
                 <Col xs={6}>
-                  <Button className="btn-register mt-3" href="#">Cadastre-se</Button>
+                  <Button className="btn-register mt-3" href="registrar">Cadastre-se</Button>
                 </Col>
               </Row>
             </Col>

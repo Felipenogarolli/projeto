@@ -24,16 +24,14 @@ function login() {
                             <div className="d-flex justify-content-center align-items-center pt-4">
                                 <a className="btn-entrar">Entrar</a>
                             </div>
-                            <a className="text pt-3" href="">Ainda não é registrado? Clique aqui! </a>
+                            <a className="text pt-3" href="registrar">Ainda não é registrado? Clique aqui! </a>
                             <a className="text pb-5" href="">Esqueceu sua senha? Clique aqui!</a>
                         </Col>
                     </Row>
                 </Container>
             </div>
         </div>
-
     );
 }
-
 export default login;
 
