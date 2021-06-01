@@ -4,14 +4,27 @@ import '../styles/register.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import imagemLogin from '../img/logo2.jpeg';
 import { useState } from "react";
+import Axios from 'axios';
+
 
 function Register() {
 
-    const [name, setName] = useState("");
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+
+    const addUser = () =>{
+        Axios.post('http://localhost:3001/register', {
+            username,
+            email,
+            phone,
+            password,
+        }).then(()=> {
+            console.log("Success");
+        })
+    }
 
     return (
         <div id="page-register">
@@ -22,14 +35,14 @@ function Register() {
                             <img className="logo" alt="logo" src={imagemLogin} />
                             <h3 className="titulo">Criar uma Conta</h3>
                             <form className="d-flex flex-column">
-                                <input className="form my-2" type="text" placeholder="Nome Completo" onChange={(event) => {setName(event.target.value);}}/>
+                                <input className="form my-2" type="text" placeholder="Nome Completo" onChange={(event) => {setUsername(event.target.value);}}/>
                                 <input className="form my-2" type="email" placeholder="Email" onChange={(event) => {setEmail(event.target.value);}}/>
                                 <input className="form my-2" type="phone" placeholder="Telefone" onChange={(event) => {setPhone(event.target.value);}} />
                                 <input className="form my-2" type="password" placeholder="Senha" onChange={(event) => {setPassword(event.target.value);}}/>
                                 <input className="form my-2" type="password" placeholder="Confirmar senha" onChange={(event) => {setConfirmPassword(event.target.value);}}/>
                             </form>
                             <div className="d-flex justify-content-center align-items-center">
-                                <a className="btn-criar mt-4 mb-4">Criar</a>
+                                <a className="btn-criar mt-4 mb-4" onClick={addUser}>Criar</a>
                             </div>
                         </Col>
                     </Row>

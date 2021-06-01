@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express()
 const connection = require('./database/database');
+const Register = require('./database/Register');
+const cors = require('cors');
+const alert = require('alert');
+
+app.use(express.json({limit: '50mb'}));
+app.use(cors());
 
 //Sequelize connection
 connection
@@ -11,6 +17,23 @@ connection
         console.log(errorMsg);
     });
 
+app.post('/register', (req,res) =>{
+    const {email,password,username,phone,confirmPassword} = req.body;
+    Register.findOne({where:{email:email}}).then( user => {
+        if(user == undefined){
+            Register.create({
+                email,
+                password,
+                username,
+                phone
+            }).then((data) =>{
+                res.json(data);
+            });
+        }else{
+            alert("Este e-mail já foi cadastrado");
+        }
+    })
+});
 
 
 //Servidor

@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const conncetion = require("./database");
+const connection = require("./database");
 
 const register = connection.define('user',{
     userId:{
@@ -10,18 +10,24 @@ const register = connection.define('user',{
     },
     email:{
         type:Sequelize.STRING,
-        allowNull:false,
+        allowNull:false
     },
     password:{
         type:Sequelize.STRING,
         allowNull:false
     },
-    name:{
+    username:{
         type:Sequelize.STRING,
         allowNull:false
     },
-    telefone:{
-        type:Sequelize.INTEGER,
+    phone:{
+        type:Sequelize.BIGINT,
         allowNull:false
     }
 });
+
+register.sync({force:false}).then(()=>{
+
+});
+
+module.exports = register;
