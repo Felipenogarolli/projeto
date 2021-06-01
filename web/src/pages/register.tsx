@@ -21,11 +21,11 @@ function Register() {
             email,
             phone,
             password,
+            confirmPassword
         }).then(()=> {
             console.log("Success");
         })
     }
-
     return (
         <div id="page-register">
             <div className="sec01">
@@ -49,7 +49,6 @@ function Register() {
                 </Container>
             </div>
         </div>
-
     );
 }
 
