@@ -4,6 +4,7 @@ import '../styles/login.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import imagemLogin from '../img/carro.png';
 import logo from '../img/logo-inicio.jpeg';
+import Rodape from './rodape';
 
 function login() {
     return (
@@ -28,6 +29,7 @@ function login() {
                             <a className="text pb-5" href="">Esqueceu sua senha? Clique aqui!</a>
                         </Col>
                     </Row>
+                   
                 </Container>
             </div>
         </div>

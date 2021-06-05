@@ -1,0 +1,13 @@
+@import "global"; 
+#page-home{
+    .sec01{
+        background-color: $color-1st;
+
+        .text{
+            color: $color-3rd;
+            font-size: 14px;
+            line-height: 35px;
+
+        }
+    }
+}

@@ -1,31 +1,16 @@
 import React from 'react';
 import '../styles/global.css';
-import '../styles/home.css';
+import '../styles/rodape.css';
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import logo from '../img/logo2.jpeg';
 
-function home() {
+function rodape() {
     return (
         <div id="page-home">
             <div className="sec01 py-5">
                 <Container>
-                    <Row className="d-flex justify-content-center">
-                        <Col lg={5} className="mt-4">
-                            <Row>
-                                <Col xs={12}>
-                                    <img className="img-fluid" src={logo} alt="logo" />
-                                </Col>
-                                <Col xs={12}>
-
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col lg={7} className="box mt-5">
-                           
-                        </Col>
-                    </Row>
-                    <Row className="rodape">
-                        <Col lg={3}>
+                    <Row className=" d-flex align-items-center justify-content-between">
+                        <Col lg={3}> 
                             <img className="logo img-fluid" src={logo} alt="logo" />
                         </Col>
                         <Col lg={3}>
@@ -55,5 +40,10 @@ function home() {
 
     );
 }
+<<<<<<< Updated upstream:web/src/pages/home.tsx
 export default home;
+=======
+
+export default rodape;
+>>>>>>> Stashed changes:web/src/pages/rodape.tsx
 
