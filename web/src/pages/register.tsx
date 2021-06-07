@@ -43,6 +43,7 @@ function Register() {
                             </form>
                             <div className="d-flex justify-content-center align-items-center">
                                 <a className="btn-criar mt-4 mb-4" onClick={addUser}>Criar</a>
+                                <a className="text pt-3" href="login">Já possui uma conta? Clique aqui! </a>
                             </div>
                         </Col>
                     </Row>
