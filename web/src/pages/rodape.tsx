@@ -40,10 +40,5 @@ function rodape() {
 
     );
 }
-<<<<<<< Updated upstream:web/src/pages/home.tsx
-export default home;
-=======
-
 export default rodape;
->>>>>>> Stashed changes:web/src/pages/rodape.tsx
 
