@@ -6,8 +6,46 @@
         .text{
             color: $color-3rd;
             font-size: 14px;
-            line-height: 35px;
-
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .title{
+            color: $color-3rd;
+            font-size: 20px;
+            font-family: $font-1st;
+            font-weight: 400;
+        }
+        .email{
+            width: 400px;
+            height: 40px;
+            padding-left: 15px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid $color-3rd;
+        }
+        .btn{
+            background-color: $color-2nd;
+            width: 200px;
+            height: 40px;
+            color: $color-3rd;
+            font-weight: 700;
+            &:hover{
+                outline: none;
+                color: $color-1st;
+                border: 2px solid $color-1st;
+                opacity: 0.65;
+                transition: 0.4s;
+                background-color: $color-3rd;
+            }
+        }
+        @media (max-width: 992px){
+            .email, .btn{
+                width: 100%;
+            }
         }
     }
 }

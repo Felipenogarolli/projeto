@@ -40,9 +40,11 @@
                 color: $color-6th;
                 font-family: $font-1st;
                 font-weight: 400;
+                outline: none;
 
                 &:hover {
                     border-color: $color-2nd;
+                    outline: none;
                 }
                 &:focus{
                     box-shadow: none;

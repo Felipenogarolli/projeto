@@ -5,6 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import imagemLogin from '../img/logo2.jpeg';
 import { useState } from "react";
 import Axios from 'axios';
+import Rodape from './rodape';
 
 
 function Register() {
@@ -29,7 +30,7 @@ function Register() {
     return (
         <div id="page-register">
             <div className="sec01">
-                <Container>
+                <Container className="cont-register">
                     <Row>
                         <Col xs={12} className="mt-4 d-flex flex-column align-items-center">
                             <img className="logo" alt="logo" src={imagemLogin} />
@@ -44,10 +45,11 @@ function Register() {
                             <div className="d-flex justify-content-center align-items-center">
                                 <a className="btn-criar mt-4 mb-4" onClick={addUser}>Criar</a>
                             </div>
-                            <a className="text pt-3" href="login">Já possui uma conta? Clique aqui! </a>
+                            <a className="text" href="login">Já possui uma conta? Clique aqui! </a>
                         </Col>
                     </Row>
                 </Container>
+                <Rodape/>
             </div>
         </div>
     );

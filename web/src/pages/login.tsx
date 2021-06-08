@@ -27,10 +27,10 @@ function Login() {
                 <Container>
                     <Row className="d-flex justify-content-center">
                         <Col lg={5} className="mt-4">
-                            <img className="img-login" src={imagemLogin} alt="logo" />
+                            <img className="img-login d-none d-lg-flex" src={imagemLogin} alt="logo" />
                         </Col>
-                        <Col lg={7} className="box mt-5">
-                            <img className="logo img-fluid pt-5" src={logo} />
+                        <Col lg={7} className="box py-5 mx-4 mx-lg-0">
+                            <img className="logo img-fluid pt-lg-5" src={logo} />
                             <h4 className="titulo py-3">Login</h4>
                             <form className="d-flex flex-column align-items-center">
                                 <input className="form my-3" type="text" name="E-mail" placeholder=" Insira seu e-mail" onChange={(event) => {setEmail(event.target.value);}}/>
@@ -40,7 +40,6 @@ function Login() {
                                 <a className="btn-entrar" onClick={authUser}>Entrar</a>
                             </div>
                             <a className="text pt-3" href="registrar">Ainda não é registrado? Clique aqui! </a>
-                            <a className="text pb-5" href="">Esqueceu sua senha? Clique aqui!</a>
                         </Col>
                     </Row>
                    

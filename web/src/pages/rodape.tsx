@@ -14,19 +14,19 @@ function rodape() {
                             <img className="logo img-fluid" src={logo} alt="logo" />
                         </Col>
                         <Col lg={3}>
-                            <a href="">
-                                <p className="text">Sobre a Safe City</p>
+                            <a href="sobre-nos">
+                                <p className="text mb-2">Sobre a Safe City</p>
                             </a>
-                            <a href="">
-                                <p className="text">Entre em Contato</p>
+                            <a href="sobre-nos">
+                                <p className="text mb-2">Entre em Contato</p>
                             </a>
-                            <a href="">
-                                <p className="text">Privacidade</p>
+                            <a href="sobre-nos">
+                                <p className="text mb-2">Siga-nos nas redes</p>
                             </a>
                         </Col>
                         <Col lg={6}>
-                            <h3 className="title">Receba notícias sobre novas atualizações</h3>
-                            <form>
+                            <h3 className="title pt-5 pt-lg-0">Receba notícias sobre novas atualizações</h3>
+                            <form className="py-3">
                                 <input className="email" type="email" placeholder="Seu e-mail"/>
                             </form>
                             <div>

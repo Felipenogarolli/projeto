@@ -1,0 +1,29 @@
+@import "global";
+
+#page-infos {
+    .sec01 {
+        .image {
+            width: 90%;
+        }
+
+        .titulo {
+            color: $color-2nd;
+            font-weight: 800;
+            font-family: $font-1st;
+            font-size: 30px;
+        }
+
+        .number, .names, .descricao {
+            color: $color-7th;
+            font-size: 18px;
+            font-family: $font-1st;
+            font-weight: 400;
+        }
+        .sobre-nos{
+            color: $color-1st;
+            font-weight: 800;
+            font-family: $font-1st;
+            font-size: 40px;
+        }
+    }
+}

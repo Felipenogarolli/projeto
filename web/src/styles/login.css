@@ -10890,10 +10890,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: #8492A6;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  outline: none;
 }
 
 #page-login .sec01 .box .form:hover {
   border-color: #FFAC3A;
+  outline: none;
 }
 
 #page-login .sec01 .box .form:focus {

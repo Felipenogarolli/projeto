@@ -10845,6 +10845,53 @@ a.text-dark:hover, a.text-dark:focus {
 #page-home .sec01 .text {
   color: #FFF;
   font-size: 14px;
-  line-height: 35px;
+}
+
+#page-home .sec01 .text:hover {
+  text-decoration: underline;
+}
+
+#page-home .sec01 a:hover {
+  text-decoration: none;
+}
+
+#page-home .sec01 .title {
+  color: #FFF;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#page-home .sec01 .email {
+  width: 400px;
+  height: 40px;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+}
+
+#page-home .sec01 .btn {
+  background-color: #FFAC3A;
+  width: 200px;
+  height: 40px;
+  color: #FFF;
+  font-weight: 700;
+}
+
+#page-home .sec01 .btn:hover {
+  outline: none;
+  color: #2D0763;
+  border: 2px solid #2D0763;
+  opacity: 0.65;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #FFF;
+}
+
+@media (max-width: 992px) {
+  #page-home .sec01 .email, #page-home .sec01 .btn {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=rodape.css.map */
