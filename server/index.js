@@ -5,26 +5,6 @@ const Register = require('./database/Register');
 const cors = require('cors');
 const alert = require('alert');
 const bcrypt = require("bcryptjs")
-const session = require('express-session');
-
-//Session
-app.use(session({
-    secret: "expcriativabsi2021",
-    cookie: {maxAge: 24 * 1000},//24 horas
-    resave: true,
-    saveUninitialized: false
-}))
-
-app.get("/session", (req, res) =>{
-    req.session.user;
-    res.send("Sessão gerada!")
-});
-
-app.get("/teste", (req,res) => {
-    res.json({
-        teste: req.session.teste
-    })
-})
 
 app.use(express.json({limit: '50mb'}));
 app.use(cors());
@@ -52,7 +32,6 @@ app.post('/register', (req,res) =>{
                 phone
             }).then((data) =>{
                 res.json(data);
-                alert("Usuário registrado!")
             });
         }else{
             alert("Este e-mail já foi cadastrado ou as senhas não coincidem");
@@ -69,12 +48,7 @@ app.post('/login', (req, res)=>{
             var correct = bcrypt.compareSync(password, user.password);
 
             if(correct){
-                req.session.user = {
-                    id: user.id,
-                    email: user.email
-                }
-                res.json(req.session.user);
-                alert("Funciona");
+                res.json({id: user.id, email: user.email});
             }else{
                 alert("E-mail ou senha inválidos")
             }
