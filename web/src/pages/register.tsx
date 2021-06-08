@@ -6,6 +6,8 @@ import imagemLogin from '../img/logo2.jpeg';
 import { useState } from "react";
 import Axios from 'axios';
 import {useHistory} from "react-router";
+import Rodape from './rodape';
+
 
 function Register() {
 
