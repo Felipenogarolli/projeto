@@ -6,18 +6,21 @@ import imagemLogin from '../img/carro.png';
 import logo from '../img/logo-inicio.jpeg';
 import { useState } from "react";
 import Axios from 'axios';
+import {useHistory} from "react-router";
+
 
 function Login() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const history = useHistory();
 
     const authUser = () =>{
         Axios.post('http://localhost:3001/login', {
             email,
             password
         }).then(()=> {
-            console.log("Success");
+            history.push("/")
         })
     }
 

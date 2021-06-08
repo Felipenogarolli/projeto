@@ -5,6 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import imagemLogin from '../img/logo2.jpeg';
 import { useState } from "react";
 import Axios from 'axios';
+import {useHistory} from "react-router";
 import Rodape from './rodape';
 
 
@@ -15,6 +16,7 @@ function Register() {
     const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const history = useHistory();
 
     const addUser = () =>{
         Axios.post('http://localhost:3001/register', {
@@ -24,7 +26,7 @@ function Register() {
             password,
             confirmPassword
         }).then(()=> {
-            console.log("Success");
+            history.push("/login")
         })
     }
     return (
