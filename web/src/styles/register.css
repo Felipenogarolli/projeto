@@ -10892,6 +10892,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 800;
 }
 
+#page-register .sec01 .text {
+  color: #8492A6;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 @media (max-width: 992px) {
   #page-register .sec01 .logo {
     width: 70%;
