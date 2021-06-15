@@ -15,7 +15,7 @@ function Info() {
                 <Container>
                     <Row className="mb-5 pb-5">
                         <Col lg={6}>
-                            <img className="image d-none d-lg-block" alt="logo" src={imagemInfo} />
+                            <img className="image d-none d-lg-block" alt="logo" src={imagemInfo}/>
                             <h3 className="titulo">Fale com a gente</h3>
                             <p className="number">(41) 99999-9999</p>
                             <h5 className="names">

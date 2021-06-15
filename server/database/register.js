@@ -1,3 +1,4 @@
+const { BOOLEAN } = require("sequelize");
 const Sequelize = require("sequelize");
 const connection = require("./database");
 
@@ -21,8 +22,13 @@ const register = connection.define('user',{
         allowNull:false
     },
     phone:{
-        type:Sequelize.BIGINT,
+        type:Sequelize.STRING,
         allowNull:false
+    },
+    admin:{
+        type:Sequelize.BOOLEAN,
+        allowNull:false,
+        default:false
     }
 });
 
